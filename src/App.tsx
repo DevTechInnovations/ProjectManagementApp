@@ -5,7 +5,9 @@ import Layout from './components/shared/Layout';
 import AuthForm from './components/auth/AuthForm';
 import Dashboard from './components/dashboard/Dashboard';
 import TaskBoard from './components/tasks/TaskBoard';
-
+import ProjectsPage from './pages/ProjectsPage'; 
+import MilestonesPage from './pages/MilestonesPage';
+import TeamPage from './pages/TeamPage';
 const AppContent: React.FC = () => {
   const { user } = useAuth();
   const [activeSection, setActiveSection] = useState('dashboard');
@@ -22,28 +24,22 @@ const AppContent: React.FC = () => {
         return <TaskBoard />;
       case 'projects':
         return (
-          <div className="text-center py-12">
-            <h2 className="text-xl text-gray-600">Projects section coming soon...</h2>
-          </div>
+          <ProjectsPage />
         );
       case 'milestones':
         return (
-          <div className="text-center py-12">
-            <h2 className="text-xl text-gray-600">Milestones section coming soon...</h2>
-          </div>
+          <MilestonesPage />
         );
       case 'team':
         return (
-          <div className="text-center py-12">
-            <h2 className="text-xl text-gray-600">Team management coming soon...</h2>
-          </div>
+          <TeamPage />
         );
-      case 'reports':
-        return (
-          <div className="text-center py-12">
-            <h2 className="text-xl text-gray-600">Reports section coming soon...</h2>
-          </div>
-        );
+      // case 'reports':
+      //   return (
+      //     <div className="text-center py-12">
+      //       <h2 className="text-xl text-gray-600">Reports section coming soon...</h2>
+      //     </div>
+      //   );
       case 'settings':
         return (
           <div className="text-center py-12">
