@@ -21,7 +21,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeSection = 'dashboard', onSectio
     { id: 'tasks', label: 'Tasks', icon: CheckSquare },
     { id: 'milestones', label: 'Milestones', icon: Target },
     { id: 'team', label: 'Team', icon: Users },
-    { id: 'reports', label: 'Reports', icon: BarChart3 },
+    // { id: 'reports', label: 'Reports', icon: BarChart3 },
     { id: 'settings', label: 'Settings', icon: Settings }
   ];
 
